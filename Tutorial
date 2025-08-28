@@ -6,3 +6,6 @@ $git clone https://github.com/sekoloton/nix-hyprland
 $cd nix-hyprland
 $sudo mv configuration.nix /etc/nixos/ #make sure configuration.nix has been backed up / deleted!!
 $sudo nixos-rebuild switch
+$reboot
+
+and Hyprland is ready, for the appearance you can take it from github or make it yourself
