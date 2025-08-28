@@ -1,0 +1,8 @@
+NIXOS
+Back up all your important config/files
+make sure nothing is missing (this only changes configuration.nix
+
+$git clone https://github.com/sekoloton/nix-hyprland 
+$cd nix-hyprland
+$sudo mv configuration.nix /etc/nixos/ #make sure configuration.nix has been backed up / deleted!!
+$sudo nixos-rebuild switch
