@@ -43,6 +43,7 @@
     description = "fadil";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
+    shell = pkgs.fish;
   };
 
   # Allow unfree packages
@@ -56,9 +57,9 @@
     autoLogin.user = "fadil";
  };
   programs.hyprland.enable = true;
-  
+  programs.fish.enable = true;
   #file manager
-  programs.thunar.enable = true;
+  #programs.thunar.enable = true;
   services.gvfs.enable = true; 
   services.tumbler.enable = true;
 
@@ -69,7 +70,6 @@
     pkgs.nerd-fonts.jetbrains-mono
  ];
   
-  
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -77,20 +77,24 @@
   gcc
   gnumake
   binutils
+  htop
   hyprland
   kitty
   waybar
   wofi
   xdg-desktop-portal-hyprland
   wayland
+  figlet
   gdm
   firefox
   mpv
   ani-cli
   hyprpaper
+  starship
   libreoffice
   onlyoffice-bin
   neofetch
+  zoxide
   gimp
   vscode
   wget
@@ -105,6 +109,26 @@
   fortune
   gvfs
   simple-mtpfs
+  nautilus
+  dunst
+  playerctl
+  psmisc
+  ripgrep
+  fish
+  foot
+  wlogout
+  direnv
+  zsh
+  nyancat
+  rofi
+  rofi-wayland
+  cava
+  pavucontrol
+  radeontop
+  python3Packages.colorama
+  python313Packages.pip
+  tty-clock
+  hollywood
   ];
   
   #pipewire
