@@ -1,6 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
 
@@ -68,6 +65,9 @@
     pkgs.font-awesome
     corefonts
     pkgs.nerd-fonts.jetbrains-mono
+    fira-code
+    noto-fonts
+    #otf-Minecraft
  ];
   
   # List packages installed in system profile. To search, run:
@@ -129,6 +129,20 @@
   python313Packages.pip
   tty-clock
   hollywood
+  nodejs
+  hyprlock
+  hypridle
+  grim
+  wf-recorder
+  blueman
+  file
+  jq
+  lm_sensors
+  yarn
+  swww
+  python313Packages.pywal
+  discord
+  spotify
   ];
   
   #pipewire
